@@ -6,5 +6,10 @@
     apt:
       name: apache2
       state: present
+
+  - name:  i want to start webserver on ansible nodes(suod service apache2 start)
+    service:
+       name: apache2
+       state: started
     
    
