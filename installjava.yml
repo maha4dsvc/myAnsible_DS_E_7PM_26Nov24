@@ -1,7 +1,7 @@
 ---
 - hosts: mywebservers
   become: yes
-  tasts: 
+  tasks: 
   - name: install java
     apt:
       name: "{{myjavapack}}"
