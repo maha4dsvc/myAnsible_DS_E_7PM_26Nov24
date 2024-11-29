@@ -15,9 +15,7 @@
 172.31.4.169
 
 
-[myappserver:vars]
-key=value
-mywebpackage=apache2
+
 
 
 
