@@ -10,7 +10,14 @@
 [mydbserver]
 172.31.4.163
 172.31.4.164
+
+[myubuntu]
 172.31.4.169
+
+
+[myappserver:vars]
+key=value
+mywebpackage=apache222222
 
 
 
