@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: 172.31.4.169
   become: yes
   tasks:  
   - name: install git (sudo apt-get install git)
