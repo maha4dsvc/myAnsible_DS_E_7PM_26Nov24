@@ -1,0 +1,8 @@
+---
+- hosts: mywebservers
+  become: yes
+  tasts: 
+  - name: install java
+    apt:
+      name: "{{myjavapack}}"
+      state: present
