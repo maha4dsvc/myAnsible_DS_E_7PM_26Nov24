@@ -1,0 +1,18 @@
+---
+- hosts: 172.31.4.169 
+  become: yes
+  tasks:
+  - include_tasks: myfile.yml
+  - name: i want to create directory
+    file:
+      path: /home/maha/myfolder
+      state: directory
+
+  - name:  i want to copy test file
+    copy:
+      src: mytestfile
+      dest: /home/maha/myfolder/mytestfile
+
+
+   
+
