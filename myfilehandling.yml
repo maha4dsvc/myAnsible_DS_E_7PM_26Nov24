@@ -22,12 +22,20 @@
     template:
         src: myindex.j2
         dest: /var/www/html/index.html
+    notify: restartwebserver
+
   - name: i want to download internet(remote)  file
     get_url:
         url: https://github.com/maha4dsvc/myAnsible_DS_E_7PM_26Nov24/blob/main/installjava.yml
         dest: /home/maha/myfolder/installjava.yml
         force_basic_auth: yes
 
+
+  handlers:
+  - name: restartwebserver
+    service:
+      name: apache2
+      state: restarted
 
    
 
